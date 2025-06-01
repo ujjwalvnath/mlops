@@ -26,6 +26,5 @@ accuracy = metrics.accuracy_score(y_test, predictions)
 print(f"Decision Tree Accuracy: {accuracy:.3f}")
 
 # Save the trained model
-os.makedirs("artifacts", exist_ok=True)
-joblib.dump(model, "artifacts/model.joblib")
-print("Model saved to artifacts/model.joblib")
+joblib.dump(model, "model.joblib")
+print("Model saved to model.joblib")
